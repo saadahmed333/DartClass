@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main() {
   var data = {"name": "Saad Ahmed", "gender": "male", "age": 19};
@@ -71,15 +72,57 @@ void main() {
   var listFriend = ['saad', 'ahmed', 'ali', 123];
 
 // for in loop
-  for (var friend in listFriend) {
-    print(friend);
-  }
+  // for (var friend in listFriend) {
+  //   print(friend);
+  // }
 
-  for (var friend in listFriend) {
-    // runtimefunction is a function to give the type of the list and the types of values...
-    print(friend.runtimeType);
-  }
+  // for (var friend in listFriend) {
+  // runtimefunction is a function to give the type of the list and the types of values...
+  //   print(friend.runtimeType);
+  // }
 
   // list [];
   // map {};
+
+// do while loop
+
+// program to find the factorial of 5
+  // int number = 5;
+  // var a = 1;
+  // while (number > 0) {
+  //   // a = a * number;
+  //   a *= number;
+  //   number--;
+  // }
+  // print(a);
+
+// readlinesync is a function to get the user input...
+
+// while loop
+// program to authenticate a user to the email address...
+  print("Enter Email Address:");
+
+  String? email = stdin.readLineSync();
+  bool authenticate = false;
+
+  while (!authenticate) {
+    if (email == 'saad@gmail.com') {
+      print("Email is Authenticated");
+      String num = '599374';
+      print("Your Verification Code is: $num");
+      print("Enter your Verification Code");
+      String? fa = stdin.readLineSync();
+      if (fa == num) {
+        print("Login Successfully");
+      } else {
+        print("Login Failed");
+      }
+      authenticate = true;
+    } else {
+      print('Email not found');
+      authenticate = false;
+      print("Enter Email Address:");
+      email = stdin.readLineSync();
+    }
+  }
 }
