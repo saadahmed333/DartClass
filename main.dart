@@ -67,4 +67,19 @@ void main() {
   // print(listFriend[listFriend.length - 1]);
   // last is a function to give the last value of the list...
   // print(listFriend.last);
+
+  var listFriend = ['saad', 'ahmed', 'ali', 123];
+
+// for in loop
+  for (var friend in listFriend) {
+    print(friend);
+  }
+
+  for (var friend in listFriend) {
+    // runtimefunction is a function to give the type of the list and the types of values...
+    print(friend.runtimeType);
+  }
+
+  // list [];
+  // map {};
 }
