@@ -100,29 +100,46 @@ void main() {
 
 // while loop
 // program to authenticate a user to the email address...
-  print("Enter Email Address:");
+  // print("Enter Email Address:");
 
-  String? email = stdin.readLineSync();
-  bool authenticate = false;
+  // String? email = stdin.readLineSync();
+  // bool authenticate = false;
 
-  while (!authenticate) {
+  // while (!authenticate) {
+  //   if (email == 'saad@gmail.com') {
+  //     print("Email is Authenticated");
+  //     String num = '599374';
+  //     print("Your Verification Code is: $num");
+  //     print("Enter your Verification Code");
+  //     String? fa = stdin.readLineSync();
+  //     if (fa == num) {
+  //       print("Login Successfully");
+  //     } else {
+  //       print("Login Failed");
+  //     }
+  //     authenticate = true;
+  //   } else {
+  //     print('Email not found');
+  //     authenticate = false;
+  //     print("Enter Email Address:");
+  //     email = stdin.readLineSync();
+  //   }
+  // }
+
+// do while loop
+
+//  while loop will run on condition and do while loop will run on first time without condition if condition is true or false do while loop will run on first time
+  var authenticate = false;
+
+  do {
+    print('Enter Email Address:');
+    var email = stdin.readLineSync();
     if (email == 'saad@gmail.com') {
-      print("Email is Authenticated");
-      String num = '599374';
-      print("Your Verification Code is: $num");
-      print("Enter your Verification Code");
-      String? fa = stdin.readLineSync();
-      if (fa == num) {
-        print("Login Successfully");
-      } else {
-        print("Login Failed");
-      }
+      print('welcome to facebook');
       authenticate = true;
     } else {
-      print('Email not found');
+      print('oops! Incorrect email address');
       authenticate = false;
-      print("Enter Email Address:");
-      email = stdin.readLineSync();
     }
-  }
+  } while (!authenticate);
 }
