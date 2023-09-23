@@ -129,17 +129,17 @@ void main() {
 // do while loop
 
 //  while loop will run on condition and do while loop will run on first time without condition if condition is true or false do while loop will run on first time
-  var authenticate = false;
+  // var authenticate = false;
 
-  do {
-    print('Enter Email Address:');
-    var email = stdin.readLineSync();
-    if (email == 'saad@gmail.com') {
-      print('welcome to facebook');
-      authenticate = true;
-    } else {
-      print('oops! Incorrect email address');
-      authenticate = false;
-    }
-  } while (!authenticate);
+  // do {
+  //   print('Enter Email Address:');
+  //   var email = stdin.readLineSync();
+  //   if (email == 'saad@gmail.com') {
+  //     print('welcome to facebook');
+  //     authenticate = true;
+  //   } else {
+  //     print('oops! Incorrect email address');
+  //     authenticate = false;
+  //   }
+  // } while (!authenticate);
 }
