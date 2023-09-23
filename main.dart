@@ -45,11 +45,26 @@ void main() {
   //   }
   // }
 
+// class 6 [23/9/2023];
+
   // write the program to make such a pattern like a rigth angle triangle with a number which will repeat a number in a row..
-  for (var i = 1; i <= 10; i++) {
-    for (var j = 1; j < i; j++) {
-      stdout.write(i);
-    }
-    print('');
-  }
+  // for (var i = 1; i <= 10; i++) {
+  //   for (var j = 1; j < i; j++) {
+  //     stdout.write(i);
+  //   }
+  //   print('');
+  // }
+
+  // var list = [
+  //   {"name": "saad", 'age': 19},
+  //   {"name": "ahmed", 'age': 19},
+  //   {"name": "ali", 'age': 19}
+  // ];
+  // print(list[list.length - 1]['name']);
+
+// dynamic is a keyword to support any data tye like string, number, boolean, double...
+  // List<dynamic> listFriend = ['saad', 'ahmed', 'ali', 123];
+  // print(listFriend[listFriend.length - 1]);
+  // last is a function to give the last value of the list...
+  // print(listFriend.last);
 }
