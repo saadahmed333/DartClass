@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   var data = {"name": "Saad Ahmed", "gender": "male", "age": 19};
 // print(data);
@@ -37,9 +39,17 @@ void main() {
 // }
 
 // nested for loop
-  for (int i = 2; i <= 10; i++) {
-    for (var j = 1; j <= 10; j++) {
-      print("${i} x ${j} = ${i * j}");
+  // for (int i = 2; i <= 10; i++) {
+  //   for (var j = 1; j <= 10; j++) {
+  //     print("${i} x ${j} = ${i * j}");
+  //   }
+  // }
+
+  // write the program to make such a pattern like a rigth angle triangle with a number which will repeat a number in a row..
+  for (var i = 1; i <= 10; i++) {
+    for (var j = 1; j < i; j++) {
+      stdout.write(i);
     }
+    print('');
   }
 }
