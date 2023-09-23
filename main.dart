@@ -1,17 +1,17 @@
-void main () {
-var data = {"name": "Saad Ahmed","gender": "male", "age": 19};
+void main() {
+  var data = {"name": "Saad Ahmed", "gender": "male", "age": 19};
 // print(data);
 // print(data.keys);
 // print(data.values);
 // data.clear();
 // print(data.isEmpty);
 // print(data.isNotEmpty);
-var data2 = {"class": "flutter","batch": "2", "time": '2pm'};
+  var data2 = {"class": "flutter", "batch": "2", "time": '2pm'};
 // print(data2["class"]);
 // data.addAll(data2);
 // print(data);
 // print("${data["name"]} ${data2["class"]}");
-// data2.removeWhere((key, value) => key == "batch");
+  data2.removeWhere((key, value) => key == "batch");
 // print(data2);
 
 // var f1 = {1: "Apple", 2: "banana"};
@@ -37,9 +37,9 @@ var data2 = {"class": "flutter","batch": "2", "time": '2pm'};
 // }
 
 // nested for loop
-for (int i = 2; i <= 10; i++) {
-  for (var j = 1; j <= 10; j++) {
-    print("${i} x ${j} = ${i*j}");
+  for (int i = 2; i <= 10; i++) {
+    for (var j = 1; j <= 10; j++) {
+      print("${i} x ${j} = ${i * j}");
+    }
   }
-}
 }
