@@ -1,0 +1,2 @@
+// INHERITANCE
+void main() {}
