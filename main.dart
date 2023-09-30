@@ -7,7 +7,7 @@ void main() {
 // print(data.keys);
 // print(data.values);
 // data.clear();
-// print(data.isEmpty);
+  print(data.isEmpty);
 // print(data.isNotEmpty);
   var data2 = {"class": "flutter", "batch": "2", "time": '2pm'};
 // print(data2["class"]);
